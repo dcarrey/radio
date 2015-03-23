@@ -15,13 +15,15 @@ import sys
 
 with open('radios.json') as data_file:    
     data = json.load(data_file)
+plusGrandeCle = max(data.keys(), key=len)
 
 if len (sys.argv) != 2:
     print "usage : " , sys.argv[0] , "radio"
 
-    print "Liste des radios:"
+    print "\nListe des radios:"
+
     for key in data.keys():
-        print key, ":", data[key]
+        print "%-*s : %s" % (len(plusGrandeCle), key, data[key])
 
     sys.exit(0)
 
