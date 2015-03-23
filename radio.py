@@ -13,7 +13,7 @@ import json
 import os
 import sys
 
-with open('radio.json') as data_file:    
+with open('radios.json') as data_file:    
     data = json.load(data_file)
 
 if len (sys.argv) != 2:
