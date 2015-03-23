@@ -1,6 +1,7 @@
 # radio.py
 
-1. Install mplayer
+####Install mplayer
     brew install mplayer
-2. Listen
+
+####Listen
     ./radio.py franceinter
